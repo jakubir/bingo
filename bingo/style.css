@@ -1,8 +1,8 @@
-body{
+body {
     display: grid;
-    grid-template-areas: 
-    ". h ."
-    ". t l";
+    grid-template-areas:
+        ". h ."
+        ". t l";
     grid-template-columns: 1fr 762px 1fr;
     grid-template-rows: 60px 1fr;
     gap: 50px;
@@ -11,6 +11,7 @@ body{
     padding: 0 10px;
     margin: 0;
 }
+
 h1.bingo {
     grid-area: h;
     text-align: center;
@@ -18,6 +19,7 @@ h1.bingo {
     letter-spacing: 5px;
     font-weight: bold;
 }
+
 div.list {
     border: 2px solid black;
     padding: 10px;
@@ -29,6 +31,7 @@ div.list {
     align-content: center;
     gap: 10px;
 }
+
 div.drag-object {
     padding: 10px 8px;
     height: fit-content;
@@ -38,26 +41,33 @@ div.drag-object {
     background-color: lightgrey;
     cursor: grab;
 }
+
 table {
     grid-area: t;
 }
-table, td, tr {
+
+table,
+td,
+tr {
     border: 2px solid black;
     border-collapse: collapse;
 }
+
 td {
     width: 150px;
     height: 150px;
     padding: 0;
 }
-td > div {
+
+td>div {
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-td > div.mid-field {
+
+td>div.mid-field {
     background-color: black;
     color: snow;
 }
