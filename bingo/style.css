@@ -49,7 +49,7 @@ table {
 table,
 td,
 tr {
-    border: 2px solid grey;
+    border: 2px solid black;
     border-collapse: collapse;
 }
 
@@ -68,6 +68,6 @@ td>div {
 }
 
 td>div.mid-field {
-    background-color: black;
+    background-color: grey;
     color: snow;
 }
